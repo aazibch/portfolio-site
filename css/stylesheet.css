@@ -9,23 +9,28 @@ body {
     background-color: #fff;
 }
 
-#about, #contact {
+#welcome-section, #contact {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-#about {
-    margin-top: 50px;
-    padding-top: 65px;
-    padding-bottom: 75px;
+#welcome-section {
     border-bottom: 1px solid #e7e7e7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#about p {
-    font-size: 19px;
+#welcome-section-content {
+    max-width: 60rem;
 }
 
-#portfolio {
+#welcome-section p {
+    font-size: 22px;
+}
+
+#projects {
     padding-top: 28px;
     padding-bottom: 28px;
     padding-left: 40px;
@@ -33,26 +38,26 @@ body {
     border-bottom: 1px solid #e7e7e7;
 }
 
-#portfolio h1 {
+#projects h1 {
     margin-bottom: 25px;
     font-size: 28px;
 }
 
-#portfolio .thumbnail {
+#projects .thumbnail {
     transition: box-shadow 0.3s;
 }
 
-#portfolio .thumbnail:hover {
+#projects .thumbnail:hover {
     -webkit-box-shadow:  0 0 0 3px rgba(0, 0, 0, 0.05);
     -moz-box-shadow:  0 0 0 3px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
 }
 
-#portfolio a:hover {
+#projects a:hover {
     text-decoration: none;
 }
 
-#portfolio a:focus {
+#projects a:focus {
     text-decoration: none;
 }
 
@@ -111,21 +116,21 @@ body {
 
 /* Media Queries */
 @media (min-width: 600px) {
-    #about {
+    #welcome-section {
         padding-top: 80px;
         padding-bottom: 90px;
     }
 }
 
 @media (min-width: 800px) {
-    #about {
+    #welcome-section {
         padding-top: 95px;
         padding-bottom: 105px;
     }
 }
 
 @media (min-width: 1150px) {
-    #about {
+    #welcome-section {
         padding-top: 110px;
         padding-bottom: 120px;
     }
